@@ -4,9 +4,6 @@ on: [pull_request, push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-24.04
-    defaults:
-      run:
-        working-directory: home-arrow-mod
     steps:
       - name: checkout repository
         uses: actions/checkout@v6
@@ -25,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: HomeArrow-jar
-          path: home-arrow-mod/build/libs/
+          path: build/libs/
