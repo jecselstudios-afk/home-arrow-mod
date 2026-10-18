@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "homearrow",
+	"version": "${version}",
+	"name": "Home Arrow",
+	"description": "Set a home with H, then press N to toggle an on-screen arrow that points to it.",
+	"authors": ["You"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.homearrow.HomeArrowClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
